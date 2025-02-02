@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        /* h1 {
+            color: orangered;
+            font-size: 45px;
+        } */
+
+        /* 3*3 Grid */
+        #b1,
+        #b2,
+        #b3,
+        #b4,
+        #b5,
+        #b6,
+        #b7,
+        #b8,
+        #b9 {
+            width: 80px;
+            height: 52px;
+            margin: auto;
+            border: 1px solid rgb(0, 255, 13);
+            border-radius: 16px;
+            background-color: transparent;
+            color: #00fd3372;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        /* Reset Button */
+        /* #but {
+            box-sizing: border-box;
+            width: 95px;
+            height: 40px;
+            border: 1px solid dodgerblue;
+            margin: auto;
+            border-radius: 4px;
+            font-family: Verdana,
+                Geneva, Tahoma, sans-serif;
+
+            background-color: dodgerblue;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        } */
+
+        /* Player turn space */
+        /* #print {
+            font-family: Verdana,
+                Geneva, Tahoma, sans-serif;
+
+            color: dodgerblue;
+            font-size: 20px;
+        } */
+
+        /* Main Container */
+        #main {
+            text-align: center;
+        }
+
+        /* Game Instruction Text */
+        /* #ins {
+            font-family: Verdana,
+                Geneva, Tahoma, sans-serif;
+
+            color: dodgerblue;
+            font-size: 17px;
+        } */
+    </style>
+
+</head>
+
+<body>
+    <div id="main">
+        <h1 class="neonText">TIC TAC TOE</h1>
+
+        <!-- Game Instructions -->
+        <p id="ins" class="heading" >
+            Game starts by just Tap onbox<br><br>
+            <span id="first"></span> starts as <b id="player1"> </b><br>
+            And<br>
+            <span id="second"></span> as <b id="player2"></b>
+        </p>
+        <br><br>
+        <!-- 3*3 grid of Boxes -->
+        <input type="text" id="b1" onclick="myfunc_1(); myFunction();" readonly="">
+
+        <input type="text" id="b2" onclick="myfunc_2(); myFunction();" readonly="">
+
+        <input type="text" id="b3" onclick="myfunc_3(); myFunction();" readonly="">
+        <br><br>
+
+        <input type="text" id="b4" onclick="myfunc_4(); myFunction(); " readonly="">
+
+        <input type="text" id="b5" onclick="myfunc_5(); myFunction(); " readonly="">
+
+        <input type="text" id="b6" onclick="myfunc_6(); myFunction();" readonly="">
+        <br><br>
+
+        <input type="text" id="b7" onclick="myfunc_7(); myFunction();" readonly="">
+
+        <input type="text" id="b8" onclick="myfunc_8(); myFunction();" readonly="">
+
+        <input type="text" id="b9" onclick="myfunc_9(); myFunction();" readonly="">
+
+        <!-- Grid end here  -->
+        <br><br><br>
+        <!-- Button to reset game -->
+        
+        <button id="but" class="button" onclick="reset_btn()">
+            RESET
+        </button>
+
+        <br><br>
+        <!-- Space to show player turn -->
+        <p id="print" class="smallneon"></p>
+        <p id="score1" class="neonScore">Score is 0</p>
+        <p id="score2" class="neonScore">Score is 0</p>
+        <h2 id="finalResult" class="final"></h2>
+
+
+    </div>
+</body>
+<!-- <script src="./script.js"></script> -->
+<script src="./js,js"></script>
+
+</html>

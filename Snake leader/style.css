@@ -1,0 +1,103 @@
+body{
+    background-color: rgb(5, 0, 0);
+}
+
+section{
+    width: 794px;
+    height: 841px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+        
+}
+.box{
+    width: 78px;
+    height: 84px;
+    display: flex;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(2, 74, 93);
+    margin: auto;
+}
+
+.active{
+    background: rgb(255, 255, 0) !important;
+
+}
+.active2{
+    background:  rgb(255, 136, 0) !important;
+}
+.dice1 {
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    height: 100px;
+    width: 100px;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    background: rgb(255, 255, 0);
+    font-size: 20px;
+}
+
+img{
+    position: absolute;
+    left: 545px;
+    /* bottom: 58px; */
+    top: -1%;
+    height: 900px;
+    width: 888px;
+    border-radius: 8px;
+}
+
+.dice2 {
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    height: 100px;
+    width: 100px;
+    border-radius: 8px;
+    /* box-sizing: 8px; */
+    padding: 20px;
+    margin: 20px;
+    background: rgb(255, 136, 0);
+    font-size: 20px;
+}
+.lader{
+    /* background-image: url("./ladder.jpg"); */
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+}
+
+.snake{
+    /* background-image: url("./snake.jpg"); */
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+}
+/* for turn Message  */
+h3{
+    text-align: center;
+    color: aquamarine;
+}
+/* For Player 1 Name */
+.player1{
+    left: 415px;
+    position: absolute;
+    top: 397px;
+    color: antiquewhite;
+}
+/* For Player 2 Name */
+.player2{
+    position: absolute;
+    right: 419px;
+    color: antiquewhite;
+    top: 399px;
+}
+h1{
+    position: absolute;
+    color: darkmagenta;
+    text-align: center;
+}
